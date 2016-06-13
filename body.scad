@@ -1,12 +1,12 @@
 // Legality box
-Height = 800;
+Height = 500;
 Width = 1500;
 Length = 2500;
 
 OpeningLength = 1250;    // Length of the opening
-OpeningWidthBack = 1000; // Width of the opening at our shoulders
-OpeningWidthFront = 800; // Width of the opening at out knees/hands
-BaseWidth = 800;         // Where out bum is
+OpeningWidthBack = 800; // Width of the opening at our shoulders
+OpeningWidthFront = 700; // Width of the opening at out knees/hands
+BaseWidth = 600;         // Where out bum is
 BaseLength = 350;        // Offset from back at base
 NoseWidth = 400;         // Where our feet are
 NoseHeight = 200;        // Height of the nose
@@ -51,7 +51,7 @@ module wheel() {
     }
 }
 
-    module beam(from, to, r) {
+module beam(from, to, r) {
         vector = [to[0] - from[0], to[1] - from[1], to[2] - from[2]];
         distance = sqrt(pow(vector[0], 2) +	pow(vector[1], 2) +	pow(vector[2], 2));
         echo(distance);
@@ -62,7 +62,7 @@ module wheel() {
         //rotation of ZoX plane by the y axis with the angle given by the z coordinate and the sqrt(x^2 + y^2)) point in the XoY plane
         rotate([0, atan2(sqrt(pow(vector[0], 2)+pow(vector[1], 2)),vector[2]), 0])
         cylinder(h = distance, r = r, center = true);
-    } 
+} 
 
 module dup() {
     children(); 
