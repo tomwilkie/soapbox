@@ -5,11 +5,11 @@ Length = 2500;
 
 OpeningLength = 1250;    // Length of the opening
 OpeningWidthBack = 800; // Width of the opening at our shoulders
-OpeningWidthFront = 700; // Width of the opening at out knees/hands
+OpeningWidthFront = 600; // Width of the opening at out knees/hands
 BaseWidth = 600;         // Where out bum is
 BaseLength = 350;        // Offset from back at base
 NoseWidth = 400;         // Where our feet are
-NoseHeight = 200;        // Height of the nose
+NoseHeight = 100;        // Height of the nose
 
 RideHeight = 50;
 
@@ -40,7 +40,7 @@ translate([0,-Width/2,RideHeight]) {
 }
 
 WheelThickness = 30;
-WheelRadius = 350;
+WheelRadius = 295;
 RearWheelCenter = [WheelRadius, (Width/2) - WheelThickness, WheelRadius];
 FrontWheelCenter = [Length-WheelRadius, (Width/2) - WheelThickness, WheelRadius];
 HubHeight = 150;
